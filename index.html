@@ -7,42 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <title>Coding Quiz</title>
 </head>
 
-
 <body>
     <header>
-        <span id="timer" class="float-right" id="timecounter">Timer:<span id="timer"> 30</span>
+        <input id="view-scores" type="button" value="View Scores">
+        <span class="float-right" id="timer">Time: 0</span>
     </header>
     <div class="container">
-        <h1 id="quiz-title">Coding Quiz</h1>
-        <div class="d-none" id="quiz-questions">
-            <h2 class="text-info  text-center" id="title-item">titleholder</h2>
-            <div class="btn" id="answers">
-            </div>
-            <h1 id="alert"></h1>
-            
-        </div>
-        <div class="btnstart d-flex flex-column justify-content-center mt-8 mb-10" > 
-            <p id="quiz-summ" class="summ d-flex align-item-center">Here's a simple coding quiz. Try to answer the given question before time runs out. You'll also lose time if you answer incorrectly, so try you best to get the new highscore!
+        <div id="buttons">
+            <h1 id="quiz-title">Coding Quiz</h1>
+            <p id="info">Here's a simple coding quiz. If you get any questions wrong you'll get penalize by 10 seconds.
             </p>
-            <button class="btn" id="btnstart">Start Quiz</button>
-            
+            <input id="start-button" type="button" value="Start Quiz">
         </div>
-        
-        <div class=" input-group mb-3 d-none" id="addscore">
-            <h5 class="d-block"><span id="score"></span></h5>
-                <input type="text" class="form-control" placeholder="Enter your name:"
-                id="inputScore" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="input-group-text btn btn-primary" id="btnScore">Submit</button>
-
-                </div>
-        </div>
+        <div id="scores-div"></div>
+        <br>
+        <div id="question-div"></div>
+        <br>
+        <div id="answers"></div>
+        <br>
+        <form id="results"></form>
+        <script src="script.js"></script>
     </div>
-</div>
+      
 </body>
 
 </html>

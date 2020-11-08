@@ -30,16 +30,23 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-    background-color: var(--cyan);
+    background-color: var(--light);
     min-height: auto;
     font-size: 2rem;
+    max-height: 25rem;
 }
 
-#question, #quiz-summ {
-    text-align: center;
+#start-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 4rem;
 }
 
-.btnstart {
+#answers {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid: 10px;
@@ -47,16 +54,7 @@ body {
     
 }
 
-.btn {
-    background-color: var(--cyan);
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
-}
-
-.btn:hover {
+button:hover {
     border-color: black;
     background-color: white;
 }
@@ -69,8 +67,19 @@ body {
     border: solid;
     padding: 1.5rem;
     background-color: white;
+    border: 3px black solid;
 }
 
-#quiz-title {
+#view-scores{
+    position:absolute;
+    top:0;
+    right:0;
+    border: solid;
+    padding: 1.5rem;
+    background-color: white;
+    margin-right: 8rem;
+}
+
+#info, #quiz-title, #question-div {
     text-align: center;
 }
