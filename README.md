@@ -5,4 +5,4 @@ This is a coding quiz game where the questions are multiple choice. It starts of
 When the last question is answered, or when time runs out, the player will be taken to a submission page where they can enter their initials. The score and user input is then saved locally, then it brings you to the highscore board to view the data that just been entered. The player can choose to clear the high scores list from this page or go back and try again.
 
 Here is an screen shot of the quiz
-![Screenshot](quiz_screen.png)
+![Screenshot](quiz_screen.PNG)
